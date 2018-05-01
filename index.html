@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="uk">
+    <meta charset="UTF-8">
+    <title>My Page</title>
+
+
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+<div class="buylist-background">
+    <div class="leftcolumn">
+
+        <div class="submit">
+            <input class="submit-input" type="text" placeholder="Enter your product">
+            <button id="submit-button" data-tooltip="Додати товар">Додати</button>
+
+        </div>
+
+        <div class="product-list">
+            <div class="product-list-r hidden">
+                <div class="product-name"></div>
+                <input class="change-product-name hidden" type="text" placeholder="Назва товару">
+                <div class="middle-operations">
+                    <button class="product-minus not-active" data-tooltip="Зменшити кількість">-</button>
+                    <span class="product-number">1</span>
+                    <button class="product-plus" data-tooltip="Збільшити кількість">+</button>
+                </div>
+                <div class="right-operations">
+                    <button class="product-bought" data-tooltip="Товар куплено">Куплено</button>
+                    <button class="product-delete" data-tooltip="Видалити товар">х</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="rightcolumn">
+        <h3>Залишилося</h3>
+        <div class="product-left-list">
+            <div class="product-left hidden">
+                <span class="product-left-name"></span>
+                <span class="product-left-number">1</span>
+            </div>
+
+        </div>
+        <h3>Куплене</h3>
+        <div class="product-bought-list">
+        </div>
+    </div>
+
+</div>
+
+<div class="surname-badge">
+    <h1>Buy List</h1>
+    <h3>Created by:</h3>
+    <h2> Dora Holochenko</h2>
+ </div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+<script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
